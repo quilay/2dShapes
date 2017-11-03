@@ -1,0 +1,11 @@
+fullScreen();
+ellipseMode(CENTER);
+fill(#FFFFFF);
+ellipse(displayWidth/2, displayHeight*.75, displayWidth/4, displayHeight/3);
+ellipse(displayWidth/2, displayHeight*.50, displayWidth/6, displayHeight/4);
+ellipse(displayWidth/2, displayHeight*.30, displayWidth/8, displayHeight/5);
+fill(0);
+ellipse(displayWidth*.47, displayHeight*.27, displayWidth/35, displayHeight/25); 
+ellipse(displayWidth*.53, displayHeight*.27, displayWidth/35, displayHeight/25); 
+fill(#FF9100);
+triangle(displayWidth/2, displayHeight*.30, displayWidth/2, displayHeight*.33, displayWidth*.57, displayHeight*.32);

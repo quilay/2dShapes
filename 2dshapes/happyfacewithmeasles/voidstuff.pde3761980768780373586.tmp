@@ -1,0 +1,49 @@
+ //<>//
+void setup() {
+  fullScreen();
+  print(displayHeight, displayWidth);
+  rectMode(CENTER);
+  ellipse(displayWidth/2, displayHeight/2, displayWidth*.60, displayHeight);//head//
+  
+  rect(displayWidth/2, displayHeight/2, displayWidth/10, displayHeight/8);
+  rect(displayWidth/2, displayHeight*.75, displayWidth/2, displayHeight/8);
+  rectMode(CORNER);
+}
+
+void draw() {
+  stroke(1);  
+  fill(#FFFFFF);
+  ellipseMode(CENTER);
+  ellipse(displayWidth*.35, displayHeight*.37S, displayWidth/10, displayHeight/6);//left eye//
+  ellipse(displayWidth*.65, displayHeight*.37, displayWidth/10, displayHeight/6);//right eye//
+  rectMode(CENTER);
+  rect(displayWidth/2, displayHeight/2, displayWidth/10, displayHeight/8);//nose//
+  rect(displayWidth/2, displayHeight*.75, displayWidth/2, displayHeight/8);//mouth//
+  rectMode(CORNER);
+  noStroke();
+  fill(250, 0, 0);
+  ellipse(int(random(0, displayWidth+1)), int(random(0, displayHeight+1)), displayWidth/50, displayHeight/40);
+  stroke(1);
+  fill(#FF1212);
+  ellipse(int(random(0, displayWidth+1)), int(random(0, displayHeight+1)), displayWidth/50, displayHeight/40);
+}
+/*
+ void keyPressed() {
+ 
+ }
+ 
+ void mousePressed() {
+ 
+ }
+ */
+/*
+  fullScreen();
+ print(displayHeight+1, displayWidth+1);
+ 
+ noStroke();
+ fill(250, 0, 0);
+ ellipse(int(random(0, displayWidth+1)), int(random(0, displayHeight+1)), displayWidth/25, displayHeight/20);
+ stroke(1);
+ fill(#FF1212);
+ ellipse(int(random(0, displayWidth+1)), int(random(0, displayHeight+1)), displayWidth/25, displayHeight/20);
+ */
